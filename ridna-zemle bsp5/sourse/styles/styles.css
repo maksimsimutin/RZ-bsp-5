@@ -1,0 +1,84 @@
+body {
+    font-family: 'Kyiv Machine', sans-serif;
+    background: linear-gradient(270deg, #000105 21%, #b8b8b8 69%);
+}
+
+.navbar {
+    background: linear-gradient(270deg, #000105 21%, #b8b8b8 69%);
+
+}
+
+.nav-link {
+    /* background: linear-gradient(90deg, #000105 1%, #b8b8b8 35%); */
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.navbar-nav {
+    column-gap: 5px;
+}
+
+.navbar-nav .nav-link.active {
+    color: black;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+/* .sidebar {
+    background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
+} */
+
+.sidebar-img {
+    width: 100%;
+}
+
+.card {
+    background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
+}
+
+.btn {
+    background: transparent;
+    border-color: rgb(201, 198, 198);
+}
+
+.btn:hover {
+    background:#b8b8b8;
+}
+
+
+
+.footer-text p {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.slide-text,
+.footer-text  {
+    color: aliceblue;
+    margin: auto auto;
+}
+
+footer {
+    padding: 20px;
+    background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta-img {  
+    width: 50px;
+    border-radius: 50%;
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }   
+}
