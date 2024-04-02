@@ -1,81 +1,209 @@
 body {
-    font-family: 'Kyiv Machine', sans-serif;
-    background: linear-gradient(270deg, #000105 21%, #b8b8b8 69%);
-}
-
-.navbar {
-    background: linear-gradient(270deg, #000105 21%, #b8b8b8 69%);
-}
-
-.nav-link {
-    color: aliceblue;
-}
-
-.navbar-nav {
-    column-gap: 5px;
-}
-
-.navbar-nav .nav-link.active {
-    color: black;
-}
-
-.navbar-brand img {
-    border-radius: 50%;
-    width: 40px;
-}
-
-/* .sidebar {
-    background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
-} */
-
-.sidebar-img {
-    width: 100%;
-}
-
-.card {
-    background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
-}
-
-.btn {
-    background: transparent;
-    border-color: rgb(201, 198, 198);
-}
-
-.btn:hover {
-    background:#b8b8b8;
-}
-
-
-
-.footer-text p {
-    font-size: 20px;
-    margin-bottom: 0;
-}
-
-.slide-text,
-.footer-text  {
-    color: aliceblue;
-    margin: auto auto;
+  font-family: "Kyiv Machine", sans-serif;
+  background: linear-gradient(270deg, #000105 21%, #b8b8b8 69%);
 }
 
 footer {
-    padding: 20px;
-    background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
+  padding: 20px;
+  background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
+}
+
+/*===HEDER===*/
+
+.navbar {
+  background: linear-gradient(270deg, #000105 21%, #b8b8b8 69%);
+}
+
+.navbar-nav {
+  column-gap: 5px;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.nav-link {
+  color: aliceblue;
+}
+
+.navbar-nav .nav-link.active {
+  color: black;
+}
+
+.navbar-toggler {
+  background-color: grey;
+}
+
+/*==RING MAIN==*/
+
+.card {
+  background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
+}
+
+.btn {
+  background: transparent;
+  border-color: rgb(201, 198, 198);
+}
+
+.btn-primary {
+  --bs-btn-hover-border-color: #6a6b6d;
+  --bs-btn-active-bg: #6a6b6d;
+  --bs-btn-active-border-color: #6a6b6d;
+}
+
+.btn:hover {
+  background: #b8b8b8;
+}
+
+.sidebar-img {
+  width: 100%;
+}
+
+/*==FOOTER==*/
+
+.footer-text p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.slide-text,
+.footer-text {
+  color: aliceblue;
+  margin: auto auto;
 }
 
 .media-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.insta-img {  
-    width: 50px;
-    border-radius: 50%;
+.insta-img {
+  width: 50px;
+  border-radius: 50%;
 }
+
+/*modal*/
+
+.modal-body {
+    background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);;
+}
+
+.modal-window {
+  position: absolute;
+  padding-top: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  min-height: 500px;
+  border-radius: 4px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.review-form-deskription {
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: center;
+  color:aliceblue;
+}
+
+.review-form-field-wrapper {
+  margin-bottom: 15px;
+}
+
+.review-form-field-label {
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
+  color: #000105;
+}
+
+.review-form-input-wrapper {
+  position: relative;
+}
+
+.review-form-input {
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #2e2f4266;
+  padding-left: 40px;
+  transition: border-color 250ms linear;
+  outline: 0px solid transparent;
+}
+
+.review-form-input:focus {
+  border-color: #434455;
+}
+
+.review-form-input-icon {
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.review-form-input-icon {
+  fill: #2e2f4266;
+}
+
+.review-form-input:focus + .review-form-input-icon {
+  fill: #434455;
+}
+
+.review-form-comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #2e2f4266;
+  border-radius: 4px;
+  padding: 16px 12px;
+  resize: none;
+  transition: 250ms linear;
+  outline: 0px solid transparent;
+}
+
+.review-form-comment::placeholder {
+  color: #2e2f4266;
+}
+
+.review-form-comment:focus {
+  border-color: #434455;
+}
+
+.review-form-submit-btn {
+  display: block;
+  min-width: 169px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  color: aliceblue;
+  background-color: transparent;
+  background: linear-gradient(270deg, #000105 21%, #b8b8b8 69%);
+  transition: background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-submit-btn:hover,
+.review-form-submit-btn:focus {
+  background: #434455;
+  color: #fff;
+}
+
+/*==MOBILE==*/
 
 @media (max-width: 755px) {
-    .carousel-indicators {
-        display: none;
-    }   
+  .carousel-indicators {
+    display: none;
+  }
 }
