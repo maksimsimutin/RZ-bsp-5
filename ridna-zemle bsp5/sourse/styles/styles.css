@@ -5,13 +5,10 @@ body {
 
 .navbar {
     background: linear-gradient(270deg, #000105 21%, #b8b8b8 69%);
-
 }
 
 .nav-link {
-    /* background: linear-gradient(90deg, #000105 1%, #b8b8b8 35%); */
     color: aliceblue;
-    border-radius: 5px;
 }
 
 .navbar-nav {
