@@ -87,7 +87,7 @@ footer {
 /*modal*/
 
 .modal-body {
-    background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);;
+  background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
 }
 
 .modal-window {
@@ -122,7 +122,7 @@ footer {
 .review-form-field-label {
   letter-spacing: 0.04em;
   margin-bottom: 2px;
-  color: #000105;
+  color: #b8b8b8;
 }
 
 .review-form-input-wrapper {
