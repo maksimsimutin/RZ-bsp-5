@@ -1,49 +1,49 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get the form fields and remove whitespace
+    // Получить поля формы и удалить пробелы
     $name = strip_tags(trim($_POST["user-name"]));
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
     $tel = trim($_POST["user-tel"]);
     $email = filter_var(trim($_POST["user-email"]), FILTER_SANITIZE_EMAIL);
     $comment = trim($_POST["user-comment"]);
 
-    // Check that data was submitted to the mailer
+    // Проверьте, что данные были отправлены на почту
     if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        // Set a 400 (bad request) response code and exit
+        // Установить код ответа 400 (плохой запрос) и выход
         http_response_code(400);
-        echo "Please complete the form and try again.";
+        echo "Будь ласка, заповніть форму та спробуйте ще раз.";
         exit;
     }
 
-    // Set the recipient email address
-    // заменить !!!!!
+    // Установить адрес электронной почты получателя
+                                         // заменить почту!!!!!
     $recipient = "youremail@example.com";  
 
-    // Set the email subject
-    $subject = "New contact from $name";
+    //Установите тему электронной почты
+    $subject = "Новий контакт від $name";
 
-    // Build the email content
+    // Создание контента электронной почты
     $email_content = "Name: $name\n";
     $email_content .= "Tel: $tel\n";
     $email_content .= "Email: $email\n\n";
     $email_content .= "Comment:\n$comment\n";
 
-    // Build the email headers
-    $email_headers = "From: $name <$email>";
+    // Створення заголовків електронних листів
+    $email_headers = "Від: $name <$email>";
 
-    // Send the email
+    // Відправити електронне письмо
     if (mail($recipient, $subject, $email_content, $email_headers)) {
-        // Set a 200 (okay) response code
+        // Встановіть код відповіді 200 (добре)
         http_response_code(200);
-        echo "Thank you! Your message has been sent.";
+        echo "Дякую! Ваше повідомлення було відправлено.";
     } else {
-        // Set a 500 (internal server error) response code
+        // Встановіть код відповіді 500 (внутрішня помилка сервера)
         http_response_code(500);
-        echo "Oops! Something went wrong and we couldn't send your message.";
+        echo "Ой! Щось пішло не так, і ми не змогли надіслати ваше повідомлення.";
     }
 
 } else {
-    // Not a POST request, set a 403 (forbidden) response code
+   // Це не запит POST, установіть код відповіді 403 (заборонено).
     http_response_code(403);
-    echo "There was a problem with your submission, please try again.";
+    echo "Виникла проблема з вашим поданням, спробуйте ще раз.";
 }
