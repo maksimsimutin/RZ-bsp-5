@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Установить адрес электронной почты получателя
                                          // заменить почту!!!!!
-    $recipient = "youremail@example.com";  
+    $recipient = "altika.as@gmail.com";  
 
     //Установите тему электронной почты
     $subject = "Новий контакт від $name";
