@@ -1,12 +1,13 @@
 body {
   font-family: "Kyiv Machine", sans-serif;
-  /* background: linear-gradient(270deg, #000105 21%, #b8b8b8 69%); */
+  font-weight: 900;
 }
 
 footer {
   padding: 20px;
   background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
 }
+
 
 /*===HEDER===*/
 
@@ -20,7 +21,7 @@ footer {
 
 .navbar-brand img {
   border-radius: 50%;
-  width: 40px;
+  width: 70px;
 }
 
 .nav-link {
@@ -67,7 +68,12 @@ footer {
   margin-bottom: 0;
 }
 
-.slide-text,
+.slide-text {
+  color:#000105;
+  margin: auto auto;
+  font-weight: 700;
+}
+
 .footer-text {
   color: aliceblue;
   margin: auto auto;
