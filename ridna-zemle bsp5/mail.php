@@ -1,43 +1,4 @@
-1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
+
 <?php 
 
 require_once('phpmailer/PHPMailerAutoload.php');
@@ -52,10 +13,10 @@ $comment = $_POST['user_comment']
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.hostiq.ua';  																							// Specify main and backup SMTP servers
+$mail->Host = 'smtp.eushared20.twinservers.net';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'altika.as@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '12358'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'ridnazem'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = '95wgP4u6Yr'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
