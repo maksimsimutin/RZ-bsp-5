@@ -18,7 +18,6 @@ p {
   color: #fff;
 }
 
-
 /*===HEDER===*/
 
 .navbar {
@@ -32,6 +31,7 @@ p {
 .navbar-brand img {
   border-radius: 50%;
   width: 70px;
+  box-shadow: 0px 9px 8px 0px #000000;
 }
 
 .nav-link {
@@ -46,11 +46,21 @@ p {
   background-color: grey;
 }
 
+
+/*==INDEX MAIN==*/
+
+.slide-text {
+  color: #000105;
+  margin: auto auto;
+  font-weight: 700;
+}
+
 /*==RING MAIN==*/
 
 .card {
   background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
-  box-shadow: 1px -1px 10px 9px #000000;
+  /* box-shadow: 1px -1px 10px 9px #000000; */
+  box-shadow: 0px 9px 8px 0px #000000;
 }
 
 .btn {
@@ -70,6 +80,7 @@ p {
 
 .sidebar-img {
   width: 100%;
+  box-shadow: 0px 9px 8px 0px #000000;
 }
 
 /*==FOOTER==*/
@@ -79,11 +90,11 @@ p {
   margin-bottom: 0;
 }
 
-.slide-text {
-  color:#000105;
+/* .slide-text {
+  color: #000105;
   margin: auto auto;
   font-weight: 700;
-}
+} */
 
 .footer-text {
   color: aliceblue;
@@ -99,12 +110,15 @@ p {
 .insta-img {
   width: 50px;
   border-radius: 50%;
+  box-shadow: 0px 9px 8px 0px #000000;
 }
 
 /*modal*/
 
 .modal-body {
-  background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
+  /* background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%); */
+  background-color: #b8b8b8;
+  box-shadow: 0px 9px 8px 0px #000000;
 }
 
 .modal-header {
@@ -115,7 +129,7 @@ p {
   margin-bottom: 25px;
   font-size: 20px;
   text-align: center;
-  color: aliceblue;
+  color: #000000;
 }
 
 .review-form-field-wrapper {
@@ -136,7 +150,7 @@ p {
   width: 100%;
   height: 30px;
   border-radius: 4px;
-  border: 1px solid #2e2f4266;
+  border: 2px solid #2e2f4266;
   padding-left: 40px;
   transition: border-color 250ms linear;
   outline: 0px solid transparent;
@@ -166,7 +180,7 @@ p {
 .review-form-comment {
   width: 100%;
   height: 120px;
-  border: 1px solid #2e2f4266;
+  border: 2px solid #2e2f4266;
   border-radius: 4px;
   padding: 16px 12px;
   resize: none;
@@ -191,10 +205,12 @@ p {
   border: none;
   border-radius: 4px;
   letter-spacing: 0.06em;
-  color: aliceblue;
+  color: #000000;
+  box-shadow: 0px 9px 8px 0px #000000;
   background-color: transparent;
-  background: linear-gradient(270deg, #000105 21%, #b8b8b8 69%);
-  transition: background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* background: linear-gradient(270deg, #000105 21%, #b8b8b8 69%); */
+  background-color: #949698;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-submit-btn:hover,
@@ -210,6 +226,3 @@ p {
     display: none;
   }
 }
-
-
-
