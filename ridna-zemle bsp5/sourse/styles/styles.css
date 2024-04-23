@@ -1,11 +1,21 @@
 body {
   font-family: "Kyiv Machine", sans-serif;
   font-weight: 900;
+  background-color: #949698;
+}
+
+header {
+  box-shadow: 1px -1px 10px 9px #000000;
 }
 
 footer {
   padding: 20px;
   background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
+  box-shadow: 1px -1px 10px 9px #000000;
+}
+
+p {
+  color: #fff;
 }
 
 
@@ -40,6 +50,7 @@ footer {
 
 .card {
   background: linear-gradient(90deg, #000105 21%, #b8b8b8 69%);
+  box-shadow: 1px -1px 10px 9px #000000;
 }
 
 .btn {
