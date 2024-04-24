@@ -12,6 +12,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="sourse/files/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="sourse/files/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="sourse/files/favicon_io/site.webmanifest">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Gr78SsMbUFOX0WSHX");
+        })();
+    </script>
     <title>Рідна Земле</title>
 </head>
 
@@ -111,7 +118,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <p class="review-form-deskription">залиште контакти для підтвердження замовлення</p>
-                    <form class="review-form" action="mail.php" method="POST">
+                    <form id="order-form" class="review-form">
                         <div class="review-form-field-wrapper">
                             <label class="review-form-field-label" for="user-name">Ім'я</label>
                             <div class="review-form-input-wrapper">
