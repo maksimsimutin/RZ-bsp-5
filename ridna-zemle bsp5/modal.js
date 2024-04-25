@@ -20,7 +20,7 @@ let orderForm = document.getElementById('order-form');
         orderForm.addEventListener("submit", (e) => {
             e.preventDefault();
 
-            emailjs.sendForm('service_5avz66c', 'template_lw46xln', '#order-form').then(
+            emailjs.sendForm('service_1i26yt6', 'template_lw46xln', '#order-form').then(
                 (response) => {
                   let orderForm = document.getElementById('order-form');
                   orderForm.reset();
