@@ -46,7 +46,6 @@ p {
   background-color: grey;
 }
 
-
 /*==INDEX MAIN==*/
 
 .slide-text {
@@ -89,12 +88,6 @@ p {
   font-size: 20px;
   margin-bottom: 0;
 }
-
-/* .slide-text {
-  color: #000105;
-  margin: auto auto;
-  font-weight: 700;
-} */
 
 .footer-text {
   color: aliceblue;
@@ -224,5 +217,11 @@ p {
 @media (max-width: 755px) {
   .carousel-indicators {
     display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .media-links {
+    margin: 1rem 0;
   }
 }
